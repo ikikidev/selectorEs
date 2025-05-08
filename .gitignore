@@ -1,3 +1,37 @@
-/frontend/node_modules
-/frontend/package-lock.json
+# Node
+node_modules/
+dist/
+pnpm-lock.yaml
 package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite
+.vite/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Docker
+**/.env
+.env.local
+.env.*
+
+# Build / Temp
+.temp/
+.cache/
+coverage/
+
+# Otros
+*.local
+*.swp
+*.swo
