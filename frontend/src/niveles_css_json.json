@@ -1,0 +1,251 @@
+[
+  {
+    "id": 1,
+    "titulo": "Selecciona todos los elementos a",
+    "html": "<div><div class='a'></div><div class='b'></div><div class='a'></div></div>",
+    "selector": [
+      ".a",
+      "div.a"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Selecciona los elementos con ID",
+    "html": "<div><div id='uno'></div><div></div></div>",
+    "selector": [
+      "#uno"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Selecciona elementos con la clase 'activo'",
+    "html": "<div><div class='activo'></div><div></div><div class='activo'></div></div>",
+    "selector": [
+      ".activo"
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "Selecciona el primer hijo del contenedor",
+    "html": "<div><span>Uno</span><span>Dos</span><span>Tres</span></div>",
+    "selector": [
+      "div > span:first-child",
+      "span:first-child"
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Selecciona los elementos pares",
+    "html": "<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>",
+    "selector": [
+      "li:nth-child(even)",
+      "ul li:nth-child(even)"
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "Selecciona el botón con atributo `disabled`",
+    "html": "<div><button>Enviar</button><button disabled>Bloqueado</button></div>",
+    "selector": [
+      "button[disabled]",
+      "[disabled]"
+    ]
+  },
+  {
+    "titulo": "Selecciona todos los span dentro de div",
+    "html": "<div><span>Hola</span></div><section><span>No</span></section>",
+    "selector": [
+      "div span"
+    ],
+    "id": 7
+  },
+  {
+    "titulo": "Selecciona el segundo ítem de la lista",
+    "html": "<ul><li>1</li><li>2</li><li>3</li></ul>",
+    "selector": [
+      "li:nth-child(2)",
+      "ul li:nth-child(2)"
+    ],
+    "id": 8
+  },
+  {
+    "id": 9,
+    "titulo": "Selecciona el último elemento con clase 'item'",
+    "html": "<div><div class='item'></div><div class='item'></div><div class='item'></div></div>",
+    "selector": [
+      ".item:last-child",
+      "div .item:last-child"
+    ]
+  },
+  {
+    "id": 10,
+    "titulo": "Selecciona todos los párrafos dentro de la sección",
+    "html": "<section><p>Hola</p><div><p>Oculto</p></div></section>",
+    "selector": [
+      "section p",
+      "p"
+    ]
+  },
+  {
+    "id": 11,
+    "titulo": "Selecciona los elementos directos de un contenedor",
+    "html": "<div><span>Uno</span><div><span>Dos</span></div></div>",
+    "selector": [
+      "div > span"
+    ]
+  },
+  {
+    "titulo": "Selecciona elementos con clase que termina en '-alert'",
+    "html": "<div class='error-alert'></div><div class='info'></div>",
+    "selector": [
+      "[class$='-alert']"
+    ],
+    "id": 12
+  },
+  {
+    "titulo": "Selecciona solo los botones visibles",
+    "html": "<button>OK</button><button hidden>Oculto</button>",
+    "selector": [
+      "button:not([hidden])"
+    ],
+    "id": 13
+  },
+  {
+    "id": 14,
+    "titulo": "Selecciona el campo de tipo email",
+    "html": "<form><input type='text'><input type='email'></form>",
+    "selector": [
+      "input[type='email']",
+      "form input[type=email]"
+    ]
+  },
+  {
+    "id": 15,
+    "titulo": "Selecciona el input que tenga el foco",
+    "html": "<input><input autofocus>",
+    "selector": [
+      "input:focus",
+      "input[autofocus]"
+    ]
+  },
+  {
+    "titulo": "Selecciona todos los divs adyacentes a un párrafo",
+    "html": "<p>Texto</p><div>Uno</div><p>Otro</p><div>Dos</div>",
+    "selector": [
+      "p + div"
+    ],
+    "id": 16
+  },
+  {
+    "titulo": "Selecciona todas las etiquetas <strong>",
+    "html": "<p>Texto <strong>importante</strong></p>",
+    "selector": [
+      "strong"
+    ],
+    "id": 17
+  },
+  {
+    "titulo": "Selecciona los elementos con clase 'destacado' dentro de article",
+    "html": "<article><p class='destacado'></p><p></p></article>",
+    "selector": [
+      "article .destacado"
+    ],
+    "id":18
+  },
+  {
+    "titulo": "Selecciona todos los inputs requeridos",
+    "html": "<form><input required><input></form>",
+    "selector": [
+      "input[required]"
+    ],
+    "id": 19
+  },
+  {
+    "titulo": "Selecciona los elementos con clase que contiene 'btn'",
+    "html": "<div class='btn-azul'></div><div class='boton'></div>",
+    "selector": [
+      "[class*='btn']"
+    ],
+    "id": 20
+  },
+  {
+    "titulo": "Selecciona todos los artículos menos el primero",
+    "html": "<article></article><article></article><article></article>",
+    "selector": [
+      "article:not(:first-child)"
+    ],
+    "id": 21
+  },
+  {
+    "titulo": "Selecciona todos los párrafos vacíos",
+    "html": "<p></p><p>Contenido</p><p></p>",
+    "selector": [
+      "p:empty"
+    ],
+    "id": 22
+  },
+  {
+    "titulo": "Selecciona todos los divs con múltiples clases",
+    "html": "<div class='uno dos'></div><div class='uno'></div>",
+    "selector": [
+      ".uno.dos"
+    ],
+    "id": 23
+  },
+  {
+    "titulo": "Selecciona el input que esté desactivado",
+    "html": "<input><input disabled>",
+    "selector": [
+      "input:disabled"
+    ],
+    "id": 24
+  },
+  {
+    "titulo": "Selecciona todos los elementos que sean hijos únicos",
+    "html": "<div><span></span></div><div><span></span><span></span></div>",
+    "selector": [
+      "*:only-child"
+    ],
+    "id": 25
+  },
+  {
+    "titulo": "Selecciona las listas no ordenadas",
+    "html": "<ul><li>1</li></ul><ol><li>2</li></ol>",
+    "selector": [
+      "ul"
+    ],
+    "id": 26
+  },
+  {
+    "titulo": "Selecciona el div que contiene texto",
+    "html": "<div>Hola</div><div></div>",
+    "selector": [
+      "div:contains('Hola')"
+    ],
+    "id": 27
+  },
+  {
+    "titulo": "Selecciona el primer párrafo después de un div",
+    "html": "<div></div><p>Texto</p>",
+    "selector": [
+      "div + p"
+    ],
+    "id": 28
+  },
+  {
+    "titulo": "Selecciona enlaces que tengan el atributo title",
+    "html": "<a href='#' title='info'></a><a href='#'></a>",
+    "selector": [
+      "a[title]"
+    ],
+    "id": 29
+  },
+  {
+    "titulo": "Selecciona inputs visibles",
+    "html": "<input><input type='hidden'>",
+    "selector": [
+      "input:not([type='hidden'])"
+    ],
+    "id": 30
+  }
+]

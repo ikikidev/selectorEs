@@ -1,0 +1,281 @@
+[
+  {
+    "id": 1,
+    "titulo": "Selecciona todos los elementos a",
+    "html": "<div><div class='a'></div><div class='b'></div><div class='a'></div></div>",
+    "selector": [
+      ".a",
+      "div.a"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;div class=&quot;a&quot;&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;b&quot;&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;a&quot;&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "id": 2,
+    "titulo": "Selecciona los elementos con ID",
+    "html": "<div><div id='uno'></div><div></div></div>",
+    "selector": [
+      "#uno"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;div id=&quot;uno&quot;&gt;\n  &lt;/div&gt;\n  &lt;div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "id": 3,
+    "titulo": "Selecciona elementos con la clase 'activo'",
+    "html": "<div><div class='activo'></div><div></div><div class='activo'></div></div>",
+    "selector": [
+      ".activo"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;div class=&quot;activo&quot;&gt;\n  &lt;/div&gt;\n  &lt;div&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;activo&quot;&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "id": 4,
+    "titulo": "Selecciona el primer hijo del contenedor",
+    "html": "<div><span>Uno</span><span>Dos</span><span>Tres</span></div>",
+    "selector": [
+      "div > span:first-child",
+      "span:first-child"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;span&gt;\n    Uno\n  &lt;/span&gt;\n  &lt;span&gt;\n    Dos\n  &lt;/span&gt;\n  &lt;span&gt;\n    Tres\n  &lt;/span&gt;\n&lt;/div&gt;"
+  },
+  {
+    "id": 5,
+    "titulo": "Selecciona los elementos pares",
+    "html": "<ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>",
+    "selector": [
+      "li:nth-child(even)",
+      "ul li:nth-child(even)"
+    ],
+    "html_pretty": "&lt;ul&gt;\n  &lt;li&gt;\n    1\n  &lt;/li&gt;\n  &lt;li&gt;\n    2\n  &lt;/li&gt;\n  &lt;li&gt;\n    3\n  &lt;/li&gt;\n  &lt;li&gt;\n    4\n  &lt;/li&gt;\n&lt;/ul&gt;"
+  },
+  {
+    "id": 6,
+    "titulo": "Selecciona el botón con atributo `disabled`",
+    "html": "<div><button>Enviar</button><button disabled>Bloqueado</button></div>",
+    "selector": [
+      "button[disabled]",
+      "[disabled]"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;button&gt;\n    Enviar\n  &lt;/button&gt;\n  &lt;button disabled=&quot;&quot;&gt;\n    Bloqueado\n  &lt;/button&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los span dentro de div",
+    "html": "<div><span>Hola</span></div><section><span>No</span></section>",
+    "selector": [
+      "div span"
+    ],
+    "id": 7,
+    "html_pretty": "&lt;div&gt;\n  &lt;span&gt;\n    Hola\n  &lt;/span&gt;\n&lt;/div&gt;\n&lt;section&gt;\n  &lt;span&gt;\n    No\n  &lt;/span&gt;\n&lt;/section&gt;"
+  },
+  {
+    "titulo": "Selecciona el segundo ítem de la lista",
+    "html": "<ul><li>1</li><li>2</li><li>3</li></ul>",
+    "selector": [
+      "li:nth-child(2)",
+      "ul li:nth-child(2)"
+    ],
+    "id": 8,
+    "html_pretty": "&lt;ul&gt;\n  &lt;li&gt;\n    1\n  &lt;/li&gt;\n  &lt;li&gt;\n    2\n  &lt;/li&gt;\n  &lt;li&gt;\n    3\n  &lt;/li&gt;\n&lt;/ul&gt;"
+  },
+  {
+    "id": 9,
+    "titulo": "Selecciona el último elemento con clase 'item'",
+    "html": "<div><div class='item'></div><div class='item'></div><div class='item'></div></div>",
+    "selector": [
+      ".item:last-child",
+      "div .item:last-child"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;div class=&quot;item&quot;&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;item&quot;&gt;\n  &lt;/div&gt;\n  &lt;div class=&quot;item&quot;&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "id": 10,
+    "titulo": "Selecciona todos los párrafos dentro de la sección",
+    "html": "<section><p>Hola</p><div><p>Oculto</p></div></section>",
+    "selector": [
+      "section p",
+      "p"
+    ],
+    "html_pretty": "&lt;section&gt;\n  &lt;p&gt;\n    Hola\n  &lt;/p&gt;\n  &lt;div&gt;\n    &lt;p&gt;\n      Oculto\n    &lt;/p&gt;\n  &lt;/div&gt;\n&lt;/section&gt;"
+  },
+  {
+    "id": 11,
+    "titulo": "Selecciona los elementos directos de un contenedor",
+    "html": "<div><span>Uno</span><div><span>Dos</span></div></div>",
+    "selector": [
+      "div > span"
+    ],
+    "html_pretty": "&lt;div&gt;\n  &lt;span&gt;\n    Uno\n  &lt;/span&gt;\n  &lt;div&gt;\n    &lt;span&gt;\n      Dos\n    &lt;/span&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona elementos con clase que termina en '-alert'",
+    "html": "<div class='error-alert'></div><div class='info'></div>",
+    "selector": [
+      "[class$='-alert']"
+    ],
+    "id": 12,
+    "html_pretty": "&lt;div class=&quot;error-alert&quot;&gt;\n&lt;/div&gt;\n&lt;div class=&quot;info&quot;&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona solo los botones visibles",
+    "html": "<button>OK</button><button hidden>Oculto</button>",
+    "selector": [
+      "button:not([hidden])"
+    ],
+    "id": 13,
+    "html_pretty": "&lt;button&gt;\n  OK\n&lt;/button&gt;\n&lt;button hidden=&quot;&quot;&gt;\n  Oculto\n&lt;/button&gt;"
+  },
+  {
+    "id": 14,
+    "titulo": "Selecciona el campo de tipo email",
+    "html": "<form><input type='text'><input type='email'></form>",
+    "selector": [
+      "input[type='email']",
+      "form input[type=email]"
+    ],
+    "html_pretty": "&lt;form&gt;\n  &lt;input type=&quot;text&quot;&gt;\n  &lt;/input&gt;\n  &lt;input type=&quot;email&quot;&gt;\n  &lt;/input&gt;\n&lt;/form&gt;"
+  },
+  {
+    "id": 15,
+    "titulo": "Selecciona el input que tenga el foco",
+    "html": "<input><input autofocus>",
+    "selector": [
+      "input:focus",
+      "input[autofocus]"
+    ],
+    "html_pretty": "&lt;input&gt;\n&lt;/input&gt;\n&lt;input autofocus=&quot;&quot;&gt;\n&lt;/input&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los divs adyacentes a un párrafo",
+    "html": "<p>Texto</p><div>Uno</div><p>Otro</p><div>Dos</div>",
+    "selector": [
+      "p + div"
+    ],
+    "id": 16,
+    "html_pretty": "&lt;p&gt;\n  Texto\n&lt;/p&gt;\n&lt;div&gt;\n  Uno\n&lt;/div&gt;\n&lt;p&gt;\n  Otro\n&lt;/p&gt;\n&lt;div&gt;\n  Dos\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona todas las etiquetas <strong>",
+    "html": "<p>Texto <strong>importante</strong></p>",
+    "selector": [
+      "strong"
+    ],
+    "id": 17,
+    "html_pretty": "&lt;p&gt;\n  Texto\n  &lt;strong&gt;\n    importante\n  &lt;/strong&gt;\n&lt;/p&gt;"
+  },
+  {
+    "titulo": "Selecciona los elementos con clase 'destacado' dentro de article",
+    "html": "<article><p class='destacado'></p><p></p></article>",
+    "selector": [
+      "article .destacado"
+    ],
+    "id": 18,
+    "html_pretty": "&lt;article&gt;\n  &lt;p class=&quot;destacado&quot;&gt;\n  &lt;/p&gt;\n  &lt;p&gt;\n  &lt;/p&gt;\n&lt;/article&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los inputs requeridos",
+    "html": "<form><input required><input></form>",
+    "selector": [
+      "input[required]"
+    ],
+    "id": 19,
+    "html_pretty": "&lt;form&gt;\n  &lt;input required=&quot;&quot;&gt;\n  &lt;/input&gt;\n  &lt;input&gt;\n  &lt;/input&gt;\n&lt;/form&gt;"
+  },
+  {
+    "titulo": "Selecciona los elementos con clase que contiene 'btn'",
+    "html": "<div class='btn-azul'></div><div class='boton'></div>",
+    "selector": [
+      "[class*='btn']"
+    ],
+    "id": 20,
+    "html_pretty": "&lt;div class=&quot;btn-azul&quot;&gt;\n&lt;/div&gt;\n&lt;div class=&quot;boton&quot;&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los artículos menos el primero",
+    "html": "<article></article><article></article><article></article>",
+    "selector": [
+      "article:not(:first-child)"
+    ],
+    "id": 21,
+    "html_pretty": "&lt;article&gt;\n&lt;/article&gt;\n&lt;article&gt;\n&lt;/article&gt;\n&lt;article&gt;\n&lt;/article&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los párrafos vacíos",
+    "html": "<p></p><p>Contenido</p><p></p>",
+    "selector": [
+      "p:empty"
+    ],
+    "id": 22,
+    "html_pretty": "&lt;p&gt;\n&lt;/p&gt;\n&lt;p&gt;\n  Contenido\n&lt;/p&gt;\n&lt;p&gt;\n&lt;/p&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los divs con múltiples clases",
+    "html": "<div class='uno dos'></div><div class='uno'></div>",
+    "selector": [
+      ".uno.dos"
+    ],
+    "id": 23,
+    "html_pretty": "&lt;div class=&quot;uno dos&quot;&gt;\n&lt;/div&gt;\n&lt;div class=&quot;uno&quot;&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona el input que esté desactivado",
+    "html": "<input><input disabled>",
+    "selector": [
+      "input:disabled"
+    ],
+    "id": 24,
+    "html_pretty": "&lt;input&gt;\n&lt;/input&gt;\n&lt;input disabled=&quot;&quot;&gt;\n&lt;/input&gt;"
+  },
+  {
+    "titulo": "Selecciona todos los elementos que sean hijos únicos",
+    "html": "<div><span></span></div><div><span></span><span></span></div>",
+    "selector": [
+      "*:only-child"
+    ],
+    "id": 25,
+    "html_pretty": "&lt;div&gt;\n  &lt;span&gt;\n  &lt;/span&gt;\n&lt;/div&gt;\n&lt;div&gt;\n  &lt;span&gt;\n  &lt;/span&gt;\n  &lt;span&gt;\n  &lt;/span&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona las listas no ordenadas",
+    "html": "<ul><li>1</li></ul><ol><li>2</li></ol>",
+    "selector": [
+      "ul"
+    ],
+    "id": 26,
+    "html_pretty": "&lt;ul&gt;\n  &lt;li&gt;\n    1\n  &lt;/li&gt;\n&lt;/ul&gt;\n&lt;ol&gt;\n  &lt;li&gt;\n    2\n  &lt;/li&gt;\n&lt;/ol&gt;"
+  },
+  {
+    "titulo": "Selecciona el div que contiene texto",
+    "html": "<div>Hola</div><div></div>",
+    "selector": [
+      "div:contains('Hola')"
+    ],
+    "id": 27,
+    "html_pretty": "&lt;div&gt;\n  Hola\n&lt;/div&gt;\n&lt;div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "titulo": "Selecciona el primer párrafo después de un div",
+    "html": "<div></div><p>Texto</p>",
+    "selector": [
+      "div + p"
+    ],
+    "id": 28,
+    "html_pretty": "&lt;div&gt;\n&lt;/div&gt;\n&lt;p&gt;\n  Texto\n&lt;/p&gt;"
+  },
+  {
+    "titulo": "Selecciona enlaces que tengan el atributo title",
+    "html": "<a href='#' title='info'></a><a href='#'></a>",
+    "selector": [
+      "a[title]"
+    ],
+    "id": 29,
+    "html_pretty": "&lt;a href=&quot;#&quot; title=&quot;info&quot;&gt;\n&lt;/a&gt;\n&lt;a href=&quot;#&quot;&gt;\n&lt;/a&gt;"
+  },
+  {
+    "titulo": "Selecciona inputs visibles",
+    "html": "<input><input type='hidden'>",
+    "selector": [
+      "input:not([type='hidden'])"
+    ],
+    "id": 30,
+    "html_pretty": "&lt;input&gt;\n&lt;/input&gt;\n&lt;input type=&quot;hidden&quot;&gt;\n&lt;/input&gt;"
+  }
+]
